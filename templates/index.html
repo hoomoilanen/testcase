@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="5" >
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>BB-Twitter</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="row mb-5">
+        <div class="col text-center">
+          <h1 class="mb-3">
+            BB-Twitter
+          </h1>
+        </div>
+      </div>
+
+      {% for sortedtweet in sortedtweets %}
+        <div class="row my-4">
+          <div class="col">
+            <div class="card {{ 'positive' }}">
+              <div class="card-body">
+                <p class="card-text">
+                  {{ sortedtweet }}
+                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+  </body>
+</html>

@@ -15,4 +15,4 @@ python streamer.py
 ```
 python app.py
 ```
-You can also contenarize the app using Dockerfile
+You can also containerize the app using Dockerfile
